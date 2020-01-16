@@ -1,6 +1,7 @@
 ﻿// I have no Idea why I have to do this
 using System;
 using System.Linq;
+using System.Collections.Generic;
 // I have yet to understand why I need a namespace
 namespace SomeShit
 {
@@ -25,8 +26,17 @@ namespace SomeShit
                 Console.WriteLine("Sorry, that is not a valid thing to be!");
                 Main(); 
             }
-            // Now what the hell can I define the Character as? And how?
-
+            var CharLevel = 1;
+            // This seems waaay too complicated....
+            Dictionary<string, string> CharAttributes = new Dictionary<string, string>();  
+            CharAttributes.Add("Name:",CharName);
+            CharAttributes.Add("Type:",CharType);
+            CharAttributes.Add("Level:",Convert.ToString(CharLevel));
+            // And now print the Character.
+            foreach (KeyValuePair<string, string> kv in CharAttributes)  
+            {  
+            Console.WriteLine(kv.Key+" "+kv.Value);  
+            }  
         }
     }
 }
