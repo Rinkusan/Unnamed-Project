@@ -8,7 +8,9 @@ def CharCreation():
     global CharType
     CharType = input("What are you? ")
     if CharType in CharTypes: print("Thank you, " + CharName + ", you are now a Level 1 " + CharType + "!"),
-    else: CharCreation()
+    else:
+        print("That is not a valid thing to be")
+        CharCreation()
 CharCreation()
 CharLevel = 1
 # And our first Character is done.
