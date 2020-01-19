@@ -1,4 +1,4 @@
-﻿// I have no Idea why I have to do this
+﻿/*// I have no Idea why I have to do this
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -31,7 +31,7 @@ namespace SomeShit
             Dictionary<string, string> CharAttributes = new Dictionary<string, string>();  
             CharAttributes.Add("Name:",CharName);
             CharAttributes.Add("Type:",CharType);
-            CharAttributes.Add("Level:",Convert.ToString(CharLevel));
+            CharAttributes.Add("Level:",Convert.ToString(CharLevel)); 
             // And now print the Character.
             foreach (KeyValuePair<string, string> kv in CharAttributes)  
             {  
@@ -39,4 +39,4 @@ namespace SomeShit
             }  
         }
     }
-}
+}*/

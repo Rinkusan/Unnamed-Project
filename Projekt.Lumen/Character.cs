@@ -1,4 +1,4 @@
-namespace Schirra.TextGame
+namespace Projekt.Lumen
 {
     public class Character
     {
